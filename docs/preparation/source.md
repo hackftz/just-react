@@ -77,6 +77,8 @@ yarn link
 
 接下来我们通过`create-react-app`在其他地方创建新项目。这里我们随意起名，比如“a-react-demo”。
 
+注意：create-react-app构建模版项目后，检查项目中react和react-dom依赖包的版本号，再与用rollup打包生成的react和react-dom或者是下载我的[build包](https://gitee.com/kasong/react)中react和react-dom版本号是否一致（react版本更新可能会造成依赖不匹配导致调试错误）。
+
 ```sh
 npx create-react-app a-react-demo
 ```
