@@ -177,7 +177,7 @@ ClassComponent.prototype.isReactComponent = {};
 
 所以，在组件`mount`时，`Reconciler`根据`JSX`描述的组件内容生成组件对应的`Fiber节点`。
 
-在`update`时，`Reconciler`将`JSX`与`Fiber节点`保存的数据对比，生成组件对应的`Fiber节点`，并根据对比结果为`Fiber节点`打上`标记`。
+在`update`时，`Reconciler`将`JSX`生成组件对应的新的`Fiber节点`，并与旧的`Fiber节点`进行对比，并根据对比结果为`Fiber节点`打上`标记`。
 
 ## 参考资料
 
